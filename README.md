@@ -49,3 +49,7 @@ Sedaghatjoo, S. (2024). Fully Dispersed Haar-like Filter for Face Detection. Git
 
 
 
+![Example of Results](images/corr2.png)
+
+
+
