@@ -4,21 +4,33 @@
 This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi**.
 
 Haar-like filters are renowned for their simplicity, speed, and accuracy in various computer vision tasks [6].
-Haar-like features are local texture descriptors that quantify differences in the average intensity values between adjacent rectangular regions [9, 10]. Figure 1 illustrates several simple Haar-like filters that
+Haar-like features are local texture descriptors that quantify differences in the average intensity values between adjacent rectangular regions [9, 10]. The following figure illustrates several simple Haar-like filters that
 are commonly employed in feature extraction applications. 
 
 ![Example of Results](images/Haar_like_F2.jpg)
 
-As illustrated in Figure 1, Haar-like filters are commonly represented as combinations of two or more rectangular regions composed of black and white pixels [6]. 
+As illustrated in above figure, Haar-like filters are commonly represented as combinations of two or more rectangular regions composed of black and white pixels [6]. 
 This figure showcases various examples of Haar-like filters, with the default weights clearly indicated on their respective rectangles.
 The feature value g for a Haar-like filter is defined as follows:
-g(x) = v1 m1(x) + v2 m2(x), (1.1)
-where x is an image, and m1 and m2 denote the mean intensities of the pixels within
-the black and white regions of the filter, respectively. The weights v1 and v2 correspond
-to these regions and are typically represented as two integers whose sum equals zero.
-Numerous algorithms are available for determining the optimal values of weights, including brute-force search (BFS) [6], genetic algorithms (GA) [12, 13], and Fisher’s linear
-discriminant analysis (FLDA) [14]. This paper focuses specifically on identifying optimal Haar-like filters characterized by equal black and white regions. In this context, the
+
+g(x) = v1 m1(x) + v2 m2(x), 
+
+where x is an image, and m1 and m2 denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights v1 and v2 correspond to these regions and are typically represented as two integers whose sum equals zero.
+Numerous algorithms are available for determining the optimal values of weights [12,13,14]. 
+This code focuses specifically on identifying optimal Haar-like filters characterized by equal black and white regions. Then, the
 weights are assigned as v1 = −1 and v2 = 1.
+
+The paper [?] investigates Haar-like filters and introduces a novel concept: ## fully dispersed Haar-like filters. A distinctive feature of these new filters is their adaptability,
+allowing pixels to reposition themselves dynamically to optimize the detection of local
+features. These filters mark a significant advancement within the Haar-like framework,
+merging ease of use with improved accuracy in feature detection. To mitigate the risk of
+overfitting, we develop an optimization algorithm that facilitates the creation of locally
+optimized dispersed Haar-like filters, specifically targeting regions of the face to enhance
+detection precision. Our approach is not limited to face detection; it also extends to facial
+expression recognition across seven distinct classes. The experimental results presented
+herein demonstrate the superior performance of the newly optimized Haar-like filters,
+affirming their effectiveness in practical applications.
+
 A novel code is proposed here to identify optimal fully dispersed Haar-like filters for enhanced facial feature extraction and recognition. Unlike traditional Haar-like filters, these novel filters allow pixels to move freely within images, enabling more effective capture of intricate local features.
 Through extensive experiments on face detection, we demonstrate in \cite{} that our optimized filters can distinguish between face images
 and clutter with minimal error, outperforming existing code. 
