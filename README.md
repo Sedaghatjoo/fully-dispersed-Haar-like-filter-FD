@@ -13,27 +13,22 @@ As illustrated in above figure, Haar-like filters are commonly represented as co
 This figure showcases various examples of Haar-like filters, with the default weights clearly indicated on their respective rectangles.
 The feature value g for a Haar-like filter is defined as follows:
 
-g(x) = v1 m1(x) + v2 m2(x), 
+*g(x) = v1 m1(x) + v2 m2(x),* 
 
 where x is an image, and m1 and m2 denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights v1 and v2 correspond to these regions and are typically represented as two integers whose sum equals zero.
 Numerous algorithms are available for determining the optimal values of weights [12,13,14]. 
 This code focuses specifically on identifying optimal Haar-like filters characterized by equal black and white regions. Then, the
 weights are assigned as v1 = −1 and v2 = 1.
 
-The paper [?] investigates Haar-like filters and introduces a novel concept: ## fully dispersed Haar-like filters. A distinctive feature of these new filters is their adaptability,
-allowing pixels to reposition themselves dynamically to optimize the detection of local
-features. These filters mark a significant advancement within the Haar-like framework,
-merging ease of use with improved accuracy in feature detection. To mitigate the risk of
-overfitting, we develop an optimization algorithm that facilitates the creation of locally
-optimized dispersed Haar-like filters, specifically targeting regions of the face to enhance
-detection precision. Our approach is not limited to face detection; it also extends to facial
-expression recognition across seven distinct classes. The experimental results presented
-herein demonstrate the superior performance of the newly optimized Haar-like filters,
-affirming their effectiveness in practical applications.
+The paper [?] investigates Haar-like filters and introduces a novel concept: **fully dispersed Haar-like filters**. A distinctive feature of these new filters is their adaptability, allowing pixels to reposition themselves dynamically to optimize the detection of local
+features. These filters mark a significant advancement within the Haar-like framework, merging ease of use with improved accuracy in feature detection. To mitigate the risk of overfitting, we develop an optimization algorithm that facilitates the creation of locally
+optimized dispersed Haar-like filters, specifically targeting regions of the face to enhance detection precision. Our approach is not limited to face detection; it also extends to facial expression recognition across seven distinct classes. The experimental results presented
+in [?] demonstrate the superior performance of the newly optimized Haar-like filters, affirming their effectiveness in practical applications.
 
-A novel code is proposed here to identify optimal fully dispersed Haar-like filters for enhanced facial feature extraction and recognition. Unlike traditional Haar-like filters, these novel filters allow pixels to move freely within images, enabling more effective capture of intricate local features.
-Through extensive experiments on face detection, we demonstrate in \cite{} that our optimized filters can distinguish between face images
-and clutter with minimal error, outperforming existing code. 
+Then a novel code is proposed here to identify optimal fully dispersed Haar-like filters for enhanced facial feature extraction and recognition. Unlike traditional Haar-like filters, these novel filters allow pixels to move freely within images, enabling more effective capture of intricate local features. Through extensive experiments on face detection, this code shows that our optimized filters can distinguish between face images and clutter with minimal error, outperforming existing code. In the next image the optimal Haar-like filters are shown for face feature extraction. One can see the face and clutter points are distingushed by the fully dispersed Haar-like filters. 
+
+![Example of Results](images/fig22.png)
+
 
 ## Contents
 - **MATLAB Code**: The main algorithm implemented in MATLAB for feature Extraction of face images process.
