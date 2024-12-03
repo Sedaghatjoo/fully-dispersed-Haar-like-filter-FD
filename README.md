@@ -16,7 +16,7 @@ This figure showcases various examples of Haar-like filters, with the default we
 </div>
 
 
-<img src="images/fig2222.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+<img src="images/fig2222.png" alt="Centered Image" style="display: block; margin: auto;" width="500" height="100">
 
 
 
