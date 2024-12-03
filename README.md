@@ -79,15 +79,19 @@ Also some images presented in the dataset for facial experession recognation are
 4. Run the script to start feature Extraction process.
    
    Before running the code, you can change the following paramers
-   div=0.7 (the ration between train and test),
-   num1=256 (the number of black pixels)
-   num2=256 (the number of white pixels) ...
-   Wh=[-1,1] (the weights)
-   itter=200 (the number of itterations...)
+   div=0.7 (The ratio of training to testing samples ),
+   num1=256 (the number of black pixels of the filter)
+   num2=256 (the number of white pixels of the filter) ...
+   Wh=[-1,1] (the weights of black and whith parts of the filter)
+   itter=200 (the number of itterations for training)
    
-6. View the results in the MATLAB workspace. 
-The results include the graph of error values for each iteration of the proposed algorith to optimize **fully dispersed Haar-like filters**. It is similar to the following figure include false positive and false nagative errors.
+6. View the results in the MATLAB workspace.
+   The results include the graph of error values for each iteration of the proposed algorith to optimize **fully dispersed Haar-like filters**.
+   It is similar to the following figure include false positive and false nagative errors.
+   
 <img src="images/figAlg_128.jpg" alt="Centered Image" style="display: block; margin: auto;" width="400">
+result_matlab.png
+filter_matlab.png
 
 The errors are decreasing demonestrates efficiency of the algorithm to seperate the face and clutter images.
 
