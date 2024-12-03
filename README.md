@@ -79,7 +79,8 @@ Also some images presented in the dataset for facial experession recognation are
    Before running the code, you can change paramers N=?, al=? ... 
 5. View the results in the MATLAB workspace. 
 The results include the graph of error values for each iteration of the proposed algorith to optimize **fully dispersed Haar-like filters**. It is similar to the following figure include false positive and false nagative errors.
-![Example of Results](images/figAlg_128.jpg)
+<img src="images/figAlg_128.jpg" alt="Centered Image" style="display: block; margin: auto;" width="400">
+
 The errors are decreasing demonestrates efficiency of the algorithm to seperate the face and clutter images.
 
 which shows the rate of ...
