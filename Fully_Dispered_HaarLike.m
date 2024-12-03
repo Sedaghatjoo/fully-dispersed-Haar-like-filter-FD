@@ -1,17 +1,22 @@
 clc;
 clear;
 close all;
-s_pic=64; % size of each image in data
 
 load Pics % load Face data matrix
 dataF = Pics;
 load Clutter2 % load Clutter data matrix
 dataC = Clutter2;
 
+%% parameters
+div  = 0.7;     %The ratio of training to testing samples 
+num1 = 256;     %pixels number of black
+num2 = 256;     %pixels number of white
+Wh   = [-1;1];  %The weights of Haar-like filter
+itter= 200;     %number of iterations for training
+
 %% divide Face data to train and test
 ind = randperm(size(dataF,1));
 data = dataF(ind,:);
-div = 0.7;
 Ntrain = round(div*size(dataF,1));
 Ntest = size(dataF,1)-Ntrain;
 traindata = dataF(1:Ntrain,:);
@@ -34,9 +39,8 @@ Me_Clutter = reshape(Me_Clutter,s_pic,s_pic);
 
 %Best Location for Filter
 Mf = Me_Face + (1/2-Me_Clutter);
-num1 = 128; %pixels number of black
-num2 = 128; %pixels number of white
 k=0;
+s_pic=64; % size of each image in data
 for j=1:s_pic
     for i=1:s_pic
         k=k+1;
@@ -107,7 +111,6 @@ M2=[m21 m22];
 Mu2=[MuB2 , MuW2];
 
 %%  Optimal theta
-Wh=[-1;1]; % Weight
 tef = M1*Wh;
 tec = M2*Wh;
 
@@ -131,7 +134,7 @@ Neg=1;
 weightc = ones(1,NCtrain);
 WRc = zeros(1,NCtrain);
 Pos=1;
-while( ii<200)
+while( ii<=itter)
     disp(['itteration= ', num2str(ii)]);
     
     weightf  = weightf  + WR;
@@ -310,9 +313,10 @@ set(gca,'FontSize',12)
 
 plot(m21,m22,'og', 'markersize',12,'markerfacecolor'...
     ,[0, 1, 0],'linewidth',4)
-
+grid on
 plot(m11,m12,'og','linewidth',4,...
     'markersize',12)
+grid on
 title(' Distribution of mean measurement of images for train')
 
 % border ploting
@@ -320,6 +324,7 @@ x = 0:0.1:1;
 y=(te_op - Wh(1)*x)/Wh(2);
 hold on
 plot(x, y,'-k','linewidth',2)
+grid on
 hold off
 legend('clutter points','face points','mean of clutters','mean of faces',...
     'decision boundary','Location', 'best')
@@ -332,6 +337,7 @@ xlim([0,1])
 ylim([0,1])
 hold on
 plot(MuB2t,MuW2t,'or')
+grid on
 xlim([0,1])
 ylim([0,1])
 title('Distribution of mean measurement of images for test')
@@ -341,14 +347,15 @@ x = 0:0.1:1;
 y=(te_op - Wh(1)*x)/Wh(2);
 hold on
 plot(x, y,'-k','linewidth',2)
+grid on
 hold off
 legend('clutter points','face points','decision boundary',...
     'Location', 'best')
 
 
 figure(4)
-plot(Acct,'-r')
-
+plot(Acct,'-r','linewidth',2)
+grid on
 hold on
-plot(Acc,'-g')
+plot(Acc,'-g','linewidth',2)
 title('accuracy of train and test for each iteration ')
