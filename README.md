@@ -51,7 +51,7 @@ Interested readers are encouraged to refer to that source.
 
 The image of some face and clutter images in the data set are shown in the next figure
 
-<img src="images/FaceClutter.png" alt="Centered Image" style="display: block; margin: auto;" width="500">
+<img src="images/FaceClutter.png" alt="Centered Image" style="display: block; margin: auto;" width="600">
 Also some images presented in the dataset for facial experession recognation are presented in the next figure.
 
 ![Example of Results](images/expression.png)
