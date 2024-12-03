@@ -11,8 +11,9 @@ are commonly employed in feature extraction applications.
 
 As illustrated in above figure, Haar-like filters are commonly represented as combinations of two or more rectangular regions composed of black and white pixels. 
 This figure showcases various examples of Haar-like filters, with the default weights clearly indicated on their respective rectangles. These filters can be applied for facial feature extraction as is shown in the next figure:
+<img src="images/fig2222.png" alt="Description" width="200" height="100">
 
-![Example of Results](images/fig2222.png)
+
 
 The feature value g for a Haar-like filter is defined as follows:
 
