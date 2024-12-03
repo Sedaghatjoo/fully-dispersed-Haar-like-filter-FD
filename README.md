@@ -75,12 +75,17 @@ Also some images presented in the dataset for facial experession recognation are
    ```
    Pics matrix is data matrix of face images of size 64*64. The size of matrix is 1477*4096 which each row is deoted to an image.
    One can replace his data instead of it. s_pic is the size if images which is consdered as 64 here. The state is also valid for clutter matrix Clutter2. 
+
 4. Run the script to start feature Extraction process.
+   
    Before running the code, you can change the following paramers
    div=0.7 (the ration between train and test),
-   num1=256 (the number of white pixels)
-   num2=256 (the number of black pixels) ... 
-5. View the results in the MATLAB workspace. 
+   num1=256 (the number of black pixels)
+   num2=256 (the number of white pixels) ...
+   Wh=[-1,1] (the weights)
+   itter=200 (the number of itterations...)
+   
+6. View the results in the MATLAB workspace. 
 The results include the graph of error values for each iteration of the proposed algorith to optimize **fully dispersed Haar-like filters**. It is similar to the following figure include false positive and false nagative errors.
 <img src="images/figAlg_128.jpg" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
