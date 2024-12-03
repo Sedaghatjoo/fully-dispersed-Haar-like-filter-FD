@@ -12,8 +12,7 @@ are commonly employed in feature extraction applications.
 As illustrated in above figure, Haar-like filters are commonly represented as combinations of two or more rectangular regions composed of black and white pixels. 
 This figure showcases various examples of Haar-like filters, with the default weights clearly indicated on their respective rectangles. These filters can be applied for facial feature extraction as is shown in the next figure:
 
-
-![Example of Results](images/fig2222.png)
+<img src="images/fig2222.png" alt="Centered Image" style="display: block; margin: auto;" width="500" height="100">
 The feature value g for a Haar-like filter is defined as follows:
 
 *g(x) = v1 m1(x) + v2 m2(x),* 
@@ -36,7 +35,7 @@ The face and clutter images are distingushed linearly by the use of the fully di
 
 These filters also can be extracted for the facial experession recognaition with 7 distinct emotional classes: anger, contempt, disgust, fear, happiness, sadness, and surprise. The filter respect to this problem are shown in the next figure.
 
-![Example of Results](images/expriFilters22.jpg)
+<img src="images/expriFilters22.jpg" alt="Centered Image" style="display: block; margin: auto;" width="600">
 
 The figure is one of outputs of the code for facial expression recognition task. As one can see from the code, these features lead 86% and 94% accuracy when the linear and quadratic SVM are applied for classification, respectively.
 Further details regarding the newly proposed filters and their results can be found in [[1]]. 
