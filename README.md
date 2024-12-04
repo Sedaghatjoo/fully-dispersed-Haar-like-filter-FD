@@ -88,10 +88,12 @@ The accuracy graph includes the error of Haar-like filter for classification of 
    
 <img src="images/result_matlab4.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
-Then the distribution of mean measurment of test images are shown:
+Then the distribution of mean measurment of test images is shown:
+
 <img src="images/result_matlab3.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
 And the distribution of mean measurment of train images:
+
 <img src="images/result_matlab2.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
 these results show the efficiency of the Haar-like filter to distinguish the face and clutter images. 
