@@ -37,18 +37,17 @@ Interested readers are encouraged to refer to that source.
 [1]: https://arxiv.org/abs/2404.10476
 
 ## Contents
-- **MATLAB Code**: The main algorithm implemented in MATLAB for feature Extraction of face images process.
+- **MATLAB Code**: The main algorithm implemented in MATLAB for feature Extraction of face images process. Details of the algorithm is presented in [[1]].
 - **Datasets**: Two data files containing the clutter and face images used in this project.
   - `Clutter2.mat`: Contains clutter data for training and testing.
   - `Pics.mat`: Contains face images for training and testing.
 
-The image of some face and clutter images in the data set are shown in the next figure
+Some face and clutter images presented in these datasets are shown in the next figure.
 
 <img src="images/FaceClutter.png" alt="Centered Image" style="display: block; margin: auto;" width="600">
-Also some images presented in the dataset for facial experession recognation are presented in the next figure.
-
-![Example of Results](images/expression.png)
-
+ 
+The two-dimensional face and clutter images are resized to 64 × 64 and converted into one dimensional vectors by arranging the pixels contained in the images. In this situation, an
+image of size 64 × 64 is transformed to a row vector of length 4096 and inserted in a matrix of dataset as a row.
 
 ## Installation
 1. Clone this repository to your local machine:
