@@ -83,15 +83,19 @@ image of size 64 × 64 is transformed to a row vector of length 4096 and inserte
    The results include the graph of the optimized **fully dispersed Haar-like filter**:
 <img src="images/filter_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="200">
 
-and the graph of the accuracy of the Haar-like filter for each iteration of the proposed algorith can be seen as a result of the code. 
-The following figure shows the accuracy graph includes false positive and false nagative errors.
+and the graph of the accuracy of the filter can be seen as a result of the code. 
+The accuracy graph includes the error of Haar-like filter for classification of train and test images in each iteration of the algorith :
    
-<img src="images/result_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+<img src="images/result_matlab4.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
+Then the distribution of mean measurment of test images are shown:
+<img src="images/result_matlab3.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
-The errors are decreasing demonestrates efficiency of the algorithm to seperate the face and clutter images.
+And the distribution of mean measurment of train images:
+<img src="images/result_matlab2.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
-which shows the rate of ...
+these results show the efficiency of the Haar-like filter to distinguish the face and clutter images. 
+The accuracy of the classification also is reported in the matlab windows.
 
 ## Contribution Guidelines
 We welcome contributions to improve the algorithm, code, or documentation. If you'd like to contribute, please:
