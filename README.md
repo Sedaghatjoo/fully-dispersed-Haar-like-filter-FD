@@ -42,12 +42,12 @@ Interested readers are encouraged to refer to that source.
   - `Clutter2.mat`: Contains clutter data for training and testing.
   - `Pics.mat`: Contains face images for training and testing.
 
-Some face and clutter images presented in these datasets are shown in the next figure.
+Some face and clutter images applied in this research are shown in the next figure.
 
-<img src="images/FaceClutter.png" alt="Centered Image" style="display: block; margin: auto;" width="600">
+<img src="images/FaceClutter.png" alt="Centered Image" style="display: block; margin: auto;" width="800">
  
 The two-dimensional face and clutter images are resized to 64 × 64 and converted into one dimensional vectors by arranging the pixels contained in the images. In this situation, an
-image of size 64 × 64 is transformed to a row vector of length 4096 and inserted in a matrix of dataset as a row.
+image of size 64 × 64 is transformed to a row vector of length 4096 and inserted in a dataset as a row.
 
 ## Installation
 1. Clone this repository to your local machine:
@@ -62,11 +62,12 @@ image of size 64 × 64 is transformed to a row vector of length 4096 and inserte
 1. Open the MATLAB script **Fully_Dispered_HaarLike.m**.
 2. Load the dataset files by running:
    ```matlab
-   load('Clutter2.mat');
    load('Pics.mat');
+   load('Clutter2.mat');
    ```
-   Pics matrix is data matrix of face images of size 64*64. The size of matrix is 1477*4096 which each row is deoted to an image.
-   One can replace his data instead of it. s_pic is the size if images which is consdered as 64 here. The state is also valid for clutter matrix Clutter2. 
+   "Pics" matrix is data matrix of face images.  1477 face images of size 64 × 64 are vectorized and inserted in the matrix. Then the matrix is of size 1477×4096.
+   One can replace his data matrix instead of the matrix as a new research.
+   In this situation parameter s_pic which shows the size if studied images (64 × 64) have to be updated. The same statements are also valid for clutter matrix "Clutter2". 
 
 4. Run the script to start feature Extraction process.
    
@@ -74,16 +75,18 @@ image of size 64 × 64 is transformed to a row vector of length 4096 and inserte
    div=0.7 (The ratio of training to testing samples ),
    num1=256 (the number of black pixels of the filter)
    num2=256 (the number of white pixels of the filter) ...
-   Wh=[-1,1] (the weights of black and whith parts of the filter)
-   itter=200 (the number of itterations for training)
+   Wh=[-1,1] (the weights of black and white parts of the filter)
+   itter=200 (the number of iterations for training the filter)
    
 6. View the results in the MATLAB workspace.
-   The results include the graph of error values for each iteration of the proposed algorith to optimize **fully dispersed Haar-like filters**.
-   It is similar to the following figure include false positive and false nagative errors.
+   The results include the graph of the optimized **fully dispersed Haar-like filters**
+<img src="images/filter_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+
+and the graph of the accuracy of the Haar-like filter for each iteration of the proposed algorith can be seen as a result of the code. 
+The following figure shows the accuracy graph includes false positive and false nagative errors.
    
-<img src="images/figAlg_128.jpg" alt="Centered Image" style="display: block; margin: auto;" width="400">
-result_matlab.png
-filter_matlab.png
+<img src="images/result_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+
 
 The errors are decreasing demonestrates efficiency of the algorithm to seperate the face and clutter images.
 
