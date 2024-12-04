@@ -84,7 +84,7 @@ image of size 64 × 64 is transformed to a row vector of length 4096 and inserte
 <img src="images/filter_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="200">
 
 and the graph of the accuracy of the filter can be seen as a result of the code. 
-The accuracy graph includes the error of Haar-like filter for classification of train and test images in each iteration of the algorith :
+The accuracy graph includes the error of Haar-like filter for classification of train and test images in each iteration of the algorithm :
    
 <img src="images/result_matlab4.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
