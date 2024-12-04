@@ -96,7 +96,7 @@ And the distribution of mean measurment of train images:
 
 <img src="images/result_matlab2.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
 
-these results show the efficiency of the Haar-like filter to distinguish the face and clutter images. 
+These results show the efficiency of the Haar-like filter to distinguish the face and clutter images. 
 The accuracy of the classification also is reported in the MATLAB workspace.
 
 ## Contribution Guidelines
