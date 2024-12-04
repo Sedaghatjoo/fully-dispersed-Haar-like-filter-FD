@@ -79,8 +79,9 @@ image of size 64 × 64 is transformed to a row vector of length 4096 and inserte
    itter=200 (the number of iterations for training the filter)
    
 6. View the results in the MATLAB workspace.
-   The results include the graph of the optimized **fully dispersed Haar-like filters**
-<img src="images/filter_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+   
+   The results include the graph of the optimized **fully dispersed Haar-like filter**:
+<img src="images/filter_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="200">
 
 and the graph of the accuracy of the Haar-like filter for each iteration of the proposed algorith can be seen as a result of the code. 
 The following figure shows the accuracy graph includes false positive and false nagative errors.
