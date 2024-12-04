@@ -1,7 +1,7 @@
 # Project Title: Fully Dispersed Haar-like Filters for Face Detection
 
 ## Description
-This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi** in [[1]]. So a berief introduction about the subject is proposed here:
+This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi** in [[1]]. 
 
 Haar-like filters are renowned for their simplicity, speed, and accuracy in various computer vision tasks.
 Haar-like features are local texture descriptors that quantify differences in the average intensity values between adjacent rectangular regions. The following figure illustrates several simple Haar-like filters that
@@ -13,14 +13,13 @@ As illustrated in above figure, Haar-like filters are commonly represented as co
 This figure showcases various examples of Haar-like filters, with the default weights clearly indicated on their respective rectangles. These filters can be applied for facial feature extraction as is shown in the next figure:
 
 <img src="images/fig2222.png" alt="Centered Image" style="display: block; margin: auto;" width="600">
+
 The feature value g for a Haar-like filter is defined as follows:
 
 *g(x) = v1 m1(x) + v2 m2(x),* 
 
 where x is an image, and m1 and m2 denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights v1 and v2 correspond to these regions and are typically represented as two integers whose sum equals zero.
-Numerous algorithms are available for determining the optimal values of weights. 
-This code focuses specifically on identifying optimal Haar-like filters characterized by equal black and white regions. Then, the
-weights are assigned as v1 = −1 and v2 = 1.
+Numerous algorithms are available for determining the optimal values of weights. This code focuses specifically on identifying optimal Haar-like filters characterized by equal black and white regions. Then, the weights are assigned as v1 = −1 and v2 = 1.
 
 Paper [[1]] introduces a novel filter as an extreme case of the Haar-like filters, named **fully dispersed Haar-like filters**. A distinctive feature of these new filters is their adaptability, allowing pixels to reposition themselves dynamically to optimize the detection of local
 features. These filters mark a significant advancement within the Haar-like framework, merging ease of use with improved accuracy in feature detection. To mitigate the risk of overfitting, we develop an optimization algorithm that facilitates the creation of locally
