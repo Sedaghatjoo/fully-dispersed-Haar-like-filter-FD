@@ -49,7 +49,7 @@ image of size 64 × 64 is transformed to a row vector of length 4096 and inserte
 ## Installation
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter.git
+   git clone https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD.git
 
    ```
 
