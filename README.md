@@ -107,7 +107,7 @@ We welcome contributions to improve the algorithm, code, or documentation. If yo
 ## Citation
 If you use this code or dataset in your research, please cite this repository in your work:
 ```
-Sedaghatjoo, S. (2024). Fully Dispersed Haar-like Filter for Face Detection. GitHub Repository. https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter
+Sedaghatjoo, S. (2024). Fully Dispersed Haar-like Filter for Face Detection. GitHub Repository. https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD
 ```
 
 ## Links
