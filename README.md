@@ -34,7 +34,7 @@ These filters also can be extracted for the facial experession recognaition with
 
 
 ## Contents
-- **MATLAB Code**: The main algorithm implemented in MATLAB for feature Extraction of face images process. Details of the algorithm is presented in [[1]].
+- **MATLAB Code**: The main algorithm implemented in MATLAB for feature Extraction of face images process. 
 - **Datasets**: Two data files containing the clutter and face images used in this project.
   - `Clutter2.mat`: Contains clutter data for training and testing.
   - `Pics.mat`: Contains face images for training and testing.
