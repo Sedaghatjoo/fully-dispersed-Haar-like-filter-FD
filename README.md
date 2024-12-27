@@ -32,7 +32,7 @@ The face and clutter images are distingushed linearly by the use of the fully di
 
 These filters also can be extracted for the facial experession recognaition with distinct emotional classes. Experiment results show the Haar-like features lead 86% and 94% accuracy when the linear and quadratic SVM are applied for facial experession recognaition, respectively. One can see [1] for the facial experession recognaition task by the new filters.
 
-[1] https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD/edit/main/README.md
+[1] https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FER/edit/main/README.md
 
 ## Contents
 - **MATLAB Code**: The main algorithm implemented in MATLAB for feature Extraction of face images process. 
