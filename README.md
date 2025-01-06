@@ -106,7 +106,7 @@ This repository contains four face image datasets represented as matrices, along
    - **`num2`**: Number of white pixels in the filter (default: `256`)  
    - **`Wh`**: Weights of the black and white parts (default: `[-1, 1]`)  
    - **`itter`**: Number of iterations for training (default: `200`)
-   - - **`s_pic`**: Size of each image in data (default: `64`)
+   - **`s_pic`**: Size of each image in data (default: `64`)
   
 ---
 
