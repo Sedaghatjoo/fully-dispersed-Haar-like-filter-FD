@@ -2,10 +2,10 @@ clc;
 clear;
 close all;
 
-load Pics % load Face data matrix
-dataF = Pics;
-load Clutter2 % load Clutter data matrix
-dataC = Clutter2;
+load Face_UTK% load Face data matrix
+dataF = Face_UTK;
+load Clutter1 % load Clutter data matrix
+dataC = Clutter1;
 
 %% parameters
 div  = 0.7;     %The ratio of training to testing samples 
@@ -13,6 +13,7 @@ num1 = 256;     %pixels number of black
 num2 = 256;     %pixels number of white
 Wh   = [-1;1];  %The weights of Haar-like filter
 itter= 200;     %number of iterations for training
+s_pic=64; % size of each image in data
 
 %% divide Face data to train and test
 ind = randperm(size(dataF,1));
