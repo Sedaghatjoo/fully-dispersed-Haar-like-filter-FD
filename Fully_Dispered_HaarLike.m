@@ -1,7 +1,6 @@
 clc;
 clear;
 close all;
-
 load Face_UTK% load Face data matrix
 dataF = Face_UTK;
 load Clutter1 % load Clutter data matrix
@@ -14,7 +13,6 @@ num2 = 256;     %pixels number of white
 Wh   = [-1;1];  %The weights of Haar-like filter
 itter= 200;     %number of iterations for training
 s_pic=64; % size of each image in data
-
 %% divide Face data to train and test
 ind = randperm(size(dataF,1));
 data = dataF(ind,:);
@@ -41,7 +39,6 @@ Me_Clutter = reshape(Me_Clutter,s_pic,s_pic);
 %Best Location for Filter
 Mf = Me_Face + (1/2-Me_Clutter);
 k=0;
-s_pic=64; % size of each image in data
 for j=1:s_pic
     for i=1:s_pic
         k=k+1;
