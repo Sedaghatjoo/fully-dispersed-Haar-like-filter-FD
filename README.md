@@ -1,7 +1,7 @@
 # Project Title: Fully Dispersed Haar-like Filters for Face Detection
 
 ## Description
-This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi has been submitted to The Visual Computer journal [1]**. 
+This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi has been submitted to [The Visual Computer Journal](https://link.springer.com/journal/371)**. 
 
 Haar-like filters are renowned for their simplicity, speed, and accuracy in various computer vision tasks. Haar-like features are local texture descriptors that quantify differences in the average intensity values between adjacent rectangular regions. The following figure illustrates several simple Haar-like filters that are commonly employed in feature extraction applications: 
 
@@ -21,8 +21,6 @@ g(x) = v_1 m_1(x) + v_2 m_2(x),
 where x is an image, and m_1 and m_2 denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights v_1 and v_2 correspond to these regions and are typically represented as two integers whose sum equals zero.
 
 We introduce **Fully Dispersed Haar-like Filters**, which allow pixels to dynamically reposition themselves to optimize local feature detection. These filters offer enhanced accuracy for face detection and recognition tasks, including facial expression recognition across seven classes. The optimized filters achieve high accuracy, exceeding 98% for face detection and up to 94% for facial expression recognition. 
-
-[1] https://link.springer.com/journal/371
 
 ## Contents
 - **MATLAB Code**: The main algorithm for feature extraction of face images. 
@@ -109,4 +107,41 @@ This repository contains four face image datasets represented as matrices, along
    - **`s_pic`**: Size of each image in data (default: `64`)
   
 ---
+6. View the results in the MATLAB workspace.
+   
+   The results include the graph of the optimized **fully dispersed Haar-like filter**:
+<img src="images/filter_matlab.png" alt="Centered Image" style="display: block; margin: auto;" width="200">
 
+and the graph of the accuracy of the filter can be seen as a result of the code. 
+The accuracy graph includes the error of Haar-like filter for classification of train and test images in each iteration of the algorithm :
+   
+<img src="images/result_matlab4.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+
+Then the distribution of mean measurment of test images is shown:
+
+<img src="images/result_matlab3.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+
+And the distribution of mean measurment of train images:
+
+<img src="images/result_matlab2.png" alt="Centered Image" style="display: block; margin: auto;" width="400">
+
+These results show the efficiency of the Haar-like filter to distinguish the face and clutter images. 
+The accuracy of the classification also is reported in the MATLAB workspace.
+
+## Contribution Guidelines
+We welcome contributions to improve the algorithm, code, or documentation. If you'd like to contribute, please:
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and test them.
+4. Create a pull request with a detailed description of your changes.
+
+
+## Citation
+If you use this code or dataset in your research, please cite this repository in your work:
+```
+Sedaghatjoo, S. (2024). Fully Dispersed Haar-like Filter for Face Detection. GitHub Repository. https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD
+```
+
+## Links
+- **Dataset**: [Google Drive Link to Datasets](https://drive.google.com/drive/folders/1XOVwqI72RaLmJrDujGvBX3SMNUjKxVut?usp=drive_link)
+- **GitHub Repository**: [https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD](https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD)
