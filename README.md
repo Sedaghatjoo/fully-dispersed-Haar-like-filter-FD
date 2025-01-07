@@ -13,7 +13,7 @@ These filters can be applied for facial feature extraction, as shown in the next
 
 <img src="images/fig2222.png" alt="Centered Image" style="display: block; margin: auto;" width="600">
 
-The feature value g(x) for a Haar-like filter is defined as follows:
+The feature value g for a Haar-like filter is defined as follows:
 
 g(x) = v_1 m_1(x) + v_2 m_2(x),
 
