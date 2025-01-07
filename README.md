@@ -14,9 +14,8 @@ This figure showcases various examples of Haar-like filters, with the default we
 
 The feature value \( g(x) \) for a Haar-like filter is defined as follows:
 
-\[
-g(x) = v_1 \cdot m_1(x) + v_2 \cdot m_2(x),
-\]
+g(x) = v_1 m_1(x) + v_2 m_2(x),
+
 
 where \( x \) is an image, and \( m_1 \) and \( m_2 \) denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights \( v_1 \) and \( v_2 \) correspond to these regions and are typically represented as two integers whose sum equals zero.
 
