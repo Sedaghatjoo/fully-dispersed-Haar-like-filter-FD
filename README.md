@@ -1,7 +1,7 @@
 # Project Title: Fully Dispersed Haar-like Filters for Face Detection
 
 ## Description
-This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi**. 
+This repository contains the MATLAB code and datasets for implementing the **Fully Dispersed Haar-like Filter** for feature extraction of face images. The goal of this project is to provide a Fully Dispersed Haar-like Filter for feature extraction, as proposed by **Z. Sedaghtjoo, H. Hosseinzadeh, and A. Shirzadi was sent to The Visual Computer journal [2]**. 
 
 Haar-like filters are renowned for their simplicity, speed, and accuracy in various computer vision tasks. Haar-like features are local texture descriptors that quantify differences in the average intensity values between adjacent rectangular regions. The following figure illustrates several simple Haar-like filters that are commonly employed in feature extraction applications: 
 
@@ -22,7 +22,7 @@ where \( x \) is an image, and \( m_1 \) and \( m_2 \) denote the mean intensiti
 
 We introduce **Fully Dispersed Haar-like Filters**, which allow pixels to dynamically reposition themselves to optimize local feature detection. These filters offer enhanced accuracy for face detection and recognition tasks, including facial expression recognition across seven classes. The optimized filters achieve high accuracy, exceeding 98% for face detection and up to 94% for facial expression recognition. 
 
----
+[2] https://link.springer.com/journal/371
 
 ## Contents
 - **MATLAB Code**: The main algorithm for feature extraction of face images. 
