@@ -12,12 +12,12 @@ This figure showcases various examples of Haar-like filters, with the default we
 
 <img src="images/fig2222.png" alt="Centered Image" style="display: block; margin: auto;" width="600">
 
-The feature value \( g(x) \) for a Haar-like filter is defined as follows:
+The feature value g(x) for a Haar-like filter is defined as follows:
 
 g(x) = v_1 m_1(x) + v_2 m_2(x),
 
 
-where \( x \) is an image, and \( m_1 \) and \( m_2 \) denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights \( v_1 \) and \( v_2 \) correspond to these regions and are typically represented as two integers whose sum equals zero.
+where x is an image, and m_1 and m_2 denote the mean intensities of the pixels within the black and white regions of the filter, respectively. The weights v_1 and v_2 correspond to these regions and are typically represented as two integers whose sum equals zero.
 
 We introduce **Fully Dispersed Haar-like Filters**, which allow pixels to dynamically reposition themselves to optimize local feature detection. These filters offer enhanced accuracy for face detection and recognition tasks, including facial expression recognition across seven classes. The optimized filters achieve high accuracy, exceeding 98% for face detection and up to 94% for facial expression recognition. 
 
