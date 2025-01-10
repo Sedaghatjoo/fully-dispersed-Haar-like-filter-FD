@@ -146,10 +146,12 @@ We welcome contributions to improve the algorithm, code, or documentation. If yo
 
 
 ## Citation
-If you use this code or dataset in your research, please cite this repository in your work:
-```
-Sedaghatjoo, S. (2024). Fully Dispersed Haar-like Filter for Face Detection. GitHub Repository. https://github.com/Sedaghatjoo/fully-dispersed-Haar-like-filter-FD
-```
+If you use this code or dataset, please cite the following article:  
+
+Enhanced Facial Feature Extraction and Recognition Using Optimal Fully Dispersed Haar-like Filters 
+Submitted to *The Visual Computer* (Under Review), 2025.  
+Once accepted, the full citation with DOI will be updated here.
+
 
 ## Links
 - **Dataset**: [Google Drive Link to Datasets](https://drive.google.com/drive/folders/1XOVwqI72RaLmJrDujGvBX3SMNUjKxVut?usp=drive_link)
