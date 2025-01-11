@@ -88,10 +88,12 @@ testdata = data(Ntrain+1:end, :);
 NCtrain = round(div * size(dataC, 1));
 cluttertrain = dataC(1:NCtrain, :);
 cluttertest = dataC(NCtrain+1:end, :);
+```
+
 
 ---
 
-## Face Databases and Clutter Matrices
+##Face Databases and Clutter Matrices:
 
 This repository contains four face image datasets represented as matrices, along with clutter matrices used for processing and analysis. Below are detailed descriptions of the datasets and their corresponding clutter matrices:
 
@@ -101,23 +103,17 @@ This repository contains four face image datasets represented as matrices, along
 - **Clutter Matrix:**  
   **Clutter1** (`2000 x 4096`) was used for this dataset.
 
----
-
 ### 2. **Face_AR**
 - **Matrix Size:** `2600 x 4096`  
   Each row represents a face image of size `64 x 64` pixels.  
 - **Clutter Matrix:**  
   **Clutter1** (`2000 x 4096`) was also used for this dataset.
 
----
-
 ### 3. **Face_MIT_CMU**
 - **Matrix Size:** `2770 x 400`  
   Each row corresponds to a face image of size `20 x 20` pixels.  
 - **Clutter Matrix:**  
   **Clutter20** (`200 x 400`) was utilized for this dataset due to the smaller image dimensions.
-
----
 
 ### 4. **Face_UTK**
 - **Matrix Size:** `9456 x 4096`  
