@@ -39,8 +39,55 @@ These filters also can be extracted for the facial experession recognaition with
 Some face and clutter images applied in this research are shown in the figure below:
 
 <img src="images/FaceClutter.png" alt="Centered Image" style="display: block; margin: auto;" width="800">
+---
 
-The two-dimensional face and clutter images are resized to 64 x 64 and converted into one-dimensional vectors by arranging the pixels in the images. For instance, a 64 x 64 image is transformed into a row vector of length 4096 and added to the dataset.
+### Data Splitting for Training and Testing
+To ensure robust evaluation and prevent overfitting, the datasets are split into training and test sets. Below is the detailed description of this process:
+
+1. **Random Splitting**:
+   - The dataset is randomly shuffled using MATLAB's `randperm` function for each execution of the code.
+   - The split ratio is set to `70%` training and `30%` testing by default, controlled by the parameter `div`.
+
+2. **Training Data**:
+   - The first `70%` of the shuffled data is assigned to the training set.
+   - For example, in the **Face_UTK** dataset with 9456 samples, approximately 6619 samples are used for training.
+
+3. **Test Data**:
+   - The remaining `30%` of the data is assigned to the test set.
+   - For example, in the **Face_UTK** dataset, the test set contains approximately 2837 samples.
+
+4. **Clutter Data**:
+   - Similarly, the clutter dataset is split into training and testing sets using the same ratio. For the **Clutter1** dataset with 2000 samples:
+     - Training samples: ~1400.
+     - Testing samples: ~600.
+
+5.**Randomization and Robustness**:
+   The dataset is randomly split into training (70%) and testing (30%) sets for each execution using MATLAB's `randperm` function. This ensures that the algorithm is evaluated under varying data distributions, simulating real-world scenarios. 
+
+   To assess the robustness and generalizability of the proposed method, the algorithm is executed 20 times with different random splits, and the final results are reported as the **average error** and **average accuracy** across all runs. This approach eliminates the dependence on a single data split and demonstrates the overall effectiveness of the method in diverse conditions.
+
+   **Note:** Since no fixed seed is used, the specific training and testing splits vary across executions, leading to slight variations in results. This variability reflects the practical applicability and reliability of the proposed algorithm.
+
+
+6. **Mean Feature Calculation**:
+   - After splitting, the mean features of the training data are computed to initialize the Haar-like filters.
+
+7. **Multiple Runs**:
+   - The code can be executed multiple times to generate various splits and compute average performance metrics, ensuring the algorithm's robustness.
+
+#### Example Code for Splitting:
+```matlab
+% Face data splitting
+ind = randperm(size(dataF, 1));
+data = dataF(ind, :);
+Ntrain = round(div * size(dataF, 1));
+traindata = data(1:Ntrain, :);
+testdata = data(Ntrain+1:end, :);
+
+% Clutter data splitting
+NCtrain = round(div * size(dataC, 1));
+cluttertrain = dataC(1:NCtrain, :);
+cluttertest = dataC(NCtrain+1:end, :);
 
 ---
 
