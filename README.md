@@ -1,7 +1,7 @@
 # Project Title: Fully Dispersed Haar-like Filters for Face Detection
 
 ## Description
-This repository contains the MATLAB code and datasets related to the manuscript titled **Enhanced Facial Feature Extraction and Recognition Using Optimal Fully Dispersed Haar-like Filters**, which has been submitted to **[The Visual Computer Journal](https://link.springer.com/journal/371)**. The manuscript is authored by **Z. Sedaghatjoo, H. Hosseinzadeh, and A. Shirzadi**.
+This repository contains the MATLAB code and datasets related to the manuscript titled **Enhanced Facial Feature Extraction and Recognition Using Optimal Fully Dispersed Haar-like Filters**, . The manuscript is authored by **Z. Sedaghatjoo, H. Hosseinzadeh, and A. Shirzadi**.
 
 Haar-like filters are renowned for their simplicity, speed, and accuracy in various computer vision tasks. Haar-like features are local texture descriptors that quantify differences in the average intensity values between adjacent rectangular regions. The following figure illustrates several simple Haar-like filters that are commonly employed in feature extraction applications: 
 
@@ -191,8 +191,7 @@ We welcome contributions to improve the algorithm, code, or documentation. If yo
 ## Citation
 If you use this code or dataset, please cite the following article:  
 
-Enhanced Facial Feature Extraction and Recognition Using Optimal Fully Dispersed Haar-like Filters 
-Submitted to *The Visual Computer* (Under Review), 2025.  
+Enhanced Facial Feature Extraction and Recognition Using Optimal Fully Dispersed Haar-like Filters, 2025.  
 Once accepted, the full citation with DOI will be updated here.
 
 
